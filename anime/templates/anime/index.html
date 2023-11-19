@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibiflix</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'anime/css/style.css' %}">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header-container1">
+            <img alt="image" src="{% static 'anime/img/pikachu.png' %}" class="header-pikachu" />
+            <div class="header-search-n-links">
+                <div class="header-title-n-links">
+                    <span class="header-chibiflix-title">CHIBIFLIX</span>
+                    <div class="header-navlinks">
+                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="header-recent-link">
+                            Recent
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="header-anime-link">
+                            Anime
+                        </a>
+                        <a href="https://example.com" target="_blank" rel="noreferrer noopener"
+                            class="header-kdrama-link">
+                            Kdrama
+                        </a>
+                    </div>
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="Searh..." class="header-search-input input" />
+                    <img alt="image" src="{% static 'anime/img/search.png' %}" class="header-image" />
+                </div>
+            </div>
+            <img alt="image" src="{% static 'anime/img/merge.png' %}" class="header-collage" />
+            <svg viewBox="0 0 1024 1024" class="header-user-icon">
+                <path
+                    d="M896 896v-85.333c0-58.88-23.936-112.299-62.464-150.869s-91.989-62.464-150.869-62.464h-341.333c-58.88 0-112.299 23.936-150.869 62.464s-62.464 91.989-62.464 150.869v85.333c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-85.333c0-35.371 14.293-67.285 37.504-90.496s55.125-37.504 90.496-37.504h341.333c35.371 0 67.285 14.293 90.496 37.504s37.504 55.125 37.504 90.496v85.333c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667zM725.333 298.667c0-58.88-23.936-112.299-62.464-150.869s-91.989-62.464-150.869-62.464-112.299 23.936-150.869 62.464-62.464 91.989-62.464 150.869 23.936 112.299 62.464 150.869 91.989 62.464 150.869 62.464 112.299-23.936 150.869-62.464 62.464-91.989 62.464-150.869zM640 298.667c0 35.371-14.293 67.285-37.504 90.496s-55.125 37.504-90.496 37.504-67.285-14.293-90.496-37.504-37.504-55.125-37.504-90.496 14.293-67.285 37.504-90.496 55.125-37.504 90.496-37.504 67.285 14.293 90.496 37.504 37.504 55.125 37.504 90.496z">
+                </path>
+            </svg>
+            <svg viewBox="0 0 1024 1024" class="header-bookmark-icon">
+                <path
+                    d="M785.877 930.731c6.869 4.949 15.488 7.936 24.789 7.936 23.552 0 42.667-19.115 42.667-42.667v-682.667c0-35.328-14.379-67.413-37.504-90.496s-55.168-37.504-90.496-37.504h-426.667c-35.328 0-67.413 14.379-90.496 37.504s-37.504 55.168-37.504 90.496v682.667c-0.043 8.491 2.56 17.237 7.936 24.789 13.696 19.157 40.363 23.637 59.52 9.899l273.877-195.584zM768 813.099l-231.211-165.163c-15.147-10.837-34.944-10.325-49.579 0l-231.211 165.163v-599.765c0-11.776 4.736-22.4 12.501-30.165s18.389-12.501 30.165-12.501h426.667c11.776 0 22.4 4.736 30.165 12.501s12.501 18.389 12.501 30.165z">
+                </path>
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>

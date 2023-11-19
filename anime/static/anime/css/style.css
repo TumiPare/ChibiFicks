@@ -1,0 +1,143 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #0A0903;
+}
+
+.header-container1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-pikachu {
+    width: 219px;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-search-n-links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-title-n-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-chibiflix-title {
+    color: rgb(245, 244, 16);
+    font-size: 50px;
+    margin-left: -30px;
+    text-transform: uppercase;
+}
+
+.header-navlinks {
+    width: 304.640625px;
+    height: 29.75px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header-recent-link {
+    color: rgb(248, 251, 244);
+    font-size: 25px;
+    align-self: flex-start;
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
+}
+
+.header-anime-link {
+    color: rgb(248, 251, 244);
+    font-size: 25px;
+    align-self: center;
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
+}
+
+.header-kdrama-link {
+    color: rgb(248, 251, 244);
+    font-size: 25px;
+    align-self: center;
+    margin-left: var(--dl-space-space-halfunit);
+    margin-right: var(--dl-space-space-halfunit);
+}
+
+.header-search {
+    bottom: 5px;
+    position: relative;
+}
+
+.header-search-input {
+    color: #000000;
+    width: 100%;
+    height: 61px;
+    font-size: 25px;
+    background-color: #F8FBF4;
+}
+
+.header-image {
+    top: 9px;
+    right: 17px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.header-collage {
+    width: 358px;
+}
+
+.header-user-icon {
+    top: 11px;
+    fill: white;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+}
+
+.header-bookmark-icon {
+    top: 13px;
+    fill: white;
+    right: 50px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+@media(max-width: 991px) {
+    .header-title-n-links {
+        flex-direction: column;
+    }
+
+    .header-collage {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .header-pikachu {
+        display: none;
+    }
+
+    .header-title-n-links {
+        flex-direction: row;
+    }
+}
