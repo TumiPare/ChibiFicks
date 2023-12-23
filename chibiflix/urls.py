@@ -21,5 +21,7 @@ from anime import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    path("player/", views.open_player, name="player"),
+    path("player/episode/", views.open_episode, name="episode")
 
 ]

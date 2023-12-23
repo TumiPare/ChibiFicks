@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
+    <title>Anime Player</title>
+</head>
+<body>
+    <h2>{{ name }}</h2>
+    {% if link %}
+        <div id="player">Loading the player...</div>
+        <script>
+            // Setup the player
+            const player = jwplayer('player').setup({
+                file: "{{ link|escapejs }}"
+            });
+        </script>
+    {% else %}
+    <ul>
+        {% for i in ep_range %}
+            <li><a href="{% url 'episode' %}?episode={{ i }}">{{ i }}</a></li>
+        {% endfor %}
+    </ul>
+
+    {% endif %}
+
+</body>
+</html>

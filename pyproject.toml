@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "chibiflix"
+version = "0.1.0"
+description = "A new and fun Anime and Kdrama site!"
+authors = ["Tumi Pare"]
+license = "GPL-3.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.1"
+django = "^5.0"
+anipy-cli = "^2.7.27"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
